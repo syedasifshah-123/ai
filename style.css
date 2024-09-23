@@ -50,7 +50,7 @@ body {
 
 .container .btn {
     width: 100%;
-    background-color: red;
+    background-color: var(--primary);
     border: none;
     display: flex;
     align-items: center;
