@@ -39,7 +39,7 @@ recognition.onresult = (event) => {
     let currIndex = event.resultIndex;
     let transcript = event.results[currIndex][0].transcript;
     text.innerText = transcript;
-    setTimeout(() => { text.innerText = "Say in Alpha" }, 1500);
+    setTimeout(() => { text.innerText = "Say in Asif" }, 1500);
     takeCommand(transcript);
 }
 
