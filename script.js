@@ -28,9 +28,9 @@ function wishMe() {
 
 }
 
-// window.addEventListener("load", function() {
-//     setTimeout(() => { wishMe() }, 1500);
-// });
+window.addEventListener("load", function() {
+    setTimeout(() => { wishMe() }, 1500);
+});
 
 const speechRecognition = window.speechRecognition || window.webkitSpeechRecognition;
 const recognition = new speechRecognition();
@@ -70,6 +70,7 @@ function takeCommand(message) {
     }  else if (message.includes("open whatsapp")) {
         speak("opening whatsapp");
         window.open("whatsapp://");
+        window.location.href = "whatsapp://send";
     } else if (message.includes("time")) {
         let time = new Date().toLocaleString(undefined, { hour: "numeric", minute: "numeric" });
         speak(time);
